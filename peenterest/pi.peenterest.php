@@ -144,21 +144,41 @@ class Peenterest
 pEEnterest is a plugin that will generate a list of pins from the given board id.
 
 Token can be generated here
+https://developers.pinterest.com/docs/api/access_token/
 
 {exp:peenterest token="ACCESS_TOKEN" board_id="BOARD_ID" images="yes|no" creator="yes|no" counts="yes|no" media="yes|no"}
 	{id}
 	{url}
 	{link}
-	{creator}
-	{board}
 	{created_at}
 	{note}
 	{color}
-	{counts}
+	{creator}
+		{id}
+		{first_name}
+		{last_name}
+		{url}
+	{/creator}
 	{media}
-	{attribution}
+		{type}
+	{/media}
+	{board}
+		{id}
+		{url}
+		{name}
+	{/board}
+	{counts}
+		{likes}
+		{comments}
+		{repins}
+	{/counts}
 	{image}
-	{metadata}
+		{original} // or small|medium|large
+			{url}
+			{width}
+			{height}
+		{/original}
+	{/image}
 {/exp:peenterest}
 <?php
 		$buffer = ob_get_contents();
