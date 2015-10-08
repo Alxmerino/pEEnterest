@@ -19,6 +19,8 @@ $plugin_info = array(
 * The pEEnterest plugin will generate a list of pins from the given board ID
 *
 * It'll return most of the Pin object properties as variables
+*
+* @package pEEnterest
 */
 class Peenterest
 {
