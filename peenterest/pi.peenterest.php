@@ -8,7 +8,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
  */
 $plugin_info = array(
 	'pi_name'			=> 'pEEnterest',
-	'pi_version'		=> '0.0',
+	'pi_version'		=> '0.1',
 	'pi_author'			=> 'Rene Merino',
 	'pi_author_url'		=> 'http://www.amayamedia.com',
 	'pi_description'	=> 'Generates pins from the given board id, token can be generated here https://developers.pinterest.com/docs/api/access_token/',
